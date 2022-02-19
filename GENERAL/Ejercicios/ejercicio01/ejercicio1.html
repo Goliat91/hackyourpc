@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Segundo trimestre">
+  	<meta name="author" content= "Adrián Jesús">
+	<title>Ejercicio 1 - Adrian - LMSGI</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
+</head>
+<body>
+
+    <Header>
+        <div class="center">
+            <h1>Informes Almanac - SEO</h1>
+        </div>
+    </Header>
+    
+        <nav class="navbar">
+            <hr>
+            <a href="../../index.html"><h2 style="color:red">Volver</h2></a>
+            <hr>
+            <a href="#Intro">Introducción</a>
+            <hr>
+            <a href="#Ancla1">Rastreo e indexabilidad</a>
+            <hr>
+            <a href="#Ancla2">Experiencia de página</a>
+            <hr>
+            <a href="#Ancla3">En la página</a>
+            <hr>
+            <a href="#Ancla4">Imágenes</a>
+            <hr>
+            <a href="#Ancla5">Recuento de palabras</a>
+            <hr>
+            <a href="#Ancla6">Datos estructurados</a>
+            <hr>
+            <a href="#Ancla7">Enlaces</a>
+            <hr>
+            <a href="#Ancla8">Internacionalización</a>
+            <hr>
+            <a href="#Ancla9">Conclusión</a>
+            <hr>
+            <a href="../../index.html"><h2 style="color:red">Volver</h2></a>
+            <hr>
+        </nav>
+<!----------------------MAIN------------------>>
+<main class="dos_columnas">
+    <div>
+        <div>
+            <h2>Part II Capítulo 8</h2>
+            <h1>SEO</h1>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2019/seo/hero_lg.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <img src="https://almanac.httparchive.org/static/images/2019/seo/hero_lg.avif" alt="" width="70%">
+            <ul style="list-style-type: none;">
+                <li><i><b>Escrito por <a href="https://almanac.httparchive.org/en/2021/contributors#patrickstox">Patrick Stox, </a><a href="https://almanac.httparchive.org/en/2021/contributors#Tomek3c">Tomek Rudzki</a>and <a href="https://almanac.httparchive.org/en/2021/contributors#wrttnwrd">Ian Lurie</a></b></i></li>
+                <li>Revisado por <a href="https://almanac.httparchive.org/en/2021/contributors#fili">Fili Wiese</a>, <a href="https://almanac.httparchive.org/en/2021/contributors#SeoRobt">Rob Teitelman</a>, and <a href="https://almanac.httparchive.org/en/2021/contributors#fellowhuman1101">Jamie Indigo</a></li>
+                <li><i>Analizado por <a href="https://almanac.httparchive.org/en/2021/contributors#jroakes">JR Oakes</a> y <a href="https://almanac.httparchive.org/en/2021/contributors#rvth">Ruth Everett</a></i></li>
+                <li><i>Editado por <a href="https://almanac.httparchive.org/en/2021/contributors#tunetheweb">Barry Pollard</a></i></li>
+                <li><i>Reeditado por Adrián Jesús Batista Escalona</i></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------------------------------------AnclaINTRO-------------------------------------------->
+    <div>
+        <div>
+            <a id="Intro"></a>
+            <h4>Introducción</h4>
+            <p>SEO (optimización de motor de búsqueda) es la práctica de optimizar un sitio web 
+                o página web para aumentar la cantidad y la calidad de su tráfico de los resultados
+                orgánicos de un motor de búsqueda.</p>
+            <p>El SEO es más popular que nunca y ha experimentado un gran 
+                crecimiento en los últimos años a medida que las empresas buscaban nuevas 
+                formas de llegar a los clientes. La popularidad del SEO ha superado con creces a otros canales digitales.</p>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <a class="center" href="https://almanac.httparchive.org/static/images/2021/seo/seo-term-trends.png"><img src="https://almanac.httparchive.org/static/images/2021/seo/seo-term-trends.png" alt="" width="70%"></a>
+        </div>
+        <p class="center">Figura 8.1 <i>Comparación de Google Trends de SEO versus pago por clic, marketing en redes sociales y marketing por correo electrónico. </i></p>
+    </div>
+    
+    <div>
+        <div>
+            <p>El propósito del capítulo de SEO del Web Almanac es analizar varios elementos relacionados con la optimización de un sitio web. En este capítulo, verificaremos si los sitios web brindan una excelente experiencia para los usuarios y los motores de búsqueda.</p>
+            <p>Se utilizaron muchas fuentes de datos para nuestro análisis, incluido  <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a>, el Informe de <a href="https://developers.google.com/web/tools/chrome-user-experience-report">experiencia del usuario de Chrome (CrUX) </a>, así como elementos HTML sin procesar y renderizados del <a href="https://httparchive.org">Archivo HTTP</a> en dispositivos móviles y computadoras de escritorio. En el caso de HTTP Archive y Lighthouse, los datos se limitan a los datos identificados en las páginas de inicio de los sitios web únicamente, no a los rastreos de todo el sitio. Tenga esto en cuenta al sacar conclusiones de nuestros resultados. Puede obtener más información sobre el análisis en nuestra <a href="https://almanac.httparchive.org/en/2021/methodology">página de Metodología</a>. </p>
+            <p>Siga leyendo para obtener más información sobre el estado actual de la web y su compatibilidad con los motores de búsqueda. </p>
+        </div>
+    </div>
+
+
+
+<!--------------------------------------------------Ancla1-------------------------------------------->
+
+
+    <div>
+        <div>
+            <a id="Ancla1"></a>
+            <h3>Capacidad de rastreo e indexabilidad</h3>
+            <p>Para devolver resultados relevantes a estas consultas de los usuarios, los motores de búsqueda deben crear un índice de la web. El proceso para eso implica:</p>
+            <ol>
+                <li>Rastreo: los motores de búsqueda utilizan rastreadores web, o arañas, para visitar páginas en Internet. Encuentran nuevas páginas a través de fuentes como mapas de sitios o enlaces entre páginas.</li>
+                <li>Procesamiento: en este paso, los motores de búsqueda pueden representar el contenido de las páginas. Extraerán la información que necesitan, como contenido y enlaces, que utilizarán para crear y actualizar su índice, clasificar páginas y descubrir contenido nuevo.</li>
+                <li>Indexación: las páginas que cumplen con ciertos requisitos de indexabilidad en torno a la calidad y singularidad del contenido normalmente se indexarán. Estas páginas indexadas son elegibles para ser devueltas para consultas de usuarios.</li>
+            </ol>
+            <p>Analicemos algunos problemas que pueden afectar la capacidad de rastreo y la indexación. </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3><b class="borde">robots.txt</b></h3>
+            <p>497 / 5000
+                Resultados de traducción
+                <b class="borde">robots.txt</b> es un archivo ubicado en la carpeta raíz de cada subdominio en un sitio web que le dice a los robots, como los rastreadores de motores de búsqueda, dónde pueden y dónde no pueden ir.</p>
+            <p>El 81,9% de los sitios web utilizan el archivo <b class="borde">robots.txt</b> (móvil). En comparación con años anteriores (72,2% en 2019 y 80,5% en 2020), esa es una ligera mejora.</p>
+            <p>Tener un archivo <b class="borde">robots.txt</b> no es un requisito. Si devuelve un 404 no encontrado, Google supone que se pueden rastrear todas las páginas de un sitio web. Otros motores de búsqueda pueden tratar esto de manera diferente. </p>
+
+        </div>
+    </div>
+    <div>
+        <div class="center">
+            <img src="https://almanac.httparchive.org/static/images/2021/seo/robots-txt-status-codes.png" alt="" width="70%">
+        </div>
+        <i class="center">Figura 8.4. Distribución del tamaño de robots.txt.</i>
+    </div>   
+    
+    <div>
+        <div>
+
+
+            <p>El uso de <b class="borde">robots.txt</b> permite a los propietarios de sitios web controlar los robots de los motores de búsqueda. Sin embargo, los datos mostraron que hasta el 16,5% de los sitios web no tienen un archivo <b class="borde">robots.txt</b>.</p>
+            <p>Los sitios web pueden tener archivos <b class="borde">robots.txt</b> mal configurados. Por ejemplo, algunos sitios web populares estaban (presumiblemente por error) bloqueando los motores de búsqueda. Google puede mantener estos sitios web indexados durante un período de tiempo, pero eventualmente su visibilidad en los resultados de búsqueda disminuirá.</p>
+            <p>Otra categoría de errores relacionados con el archivo <b class="borde">robots.txt</b> es la accesibilidad y / o los errores de red, lo que significa que el archivo robots.txt existe pero no se puede acceder a él. Si Google solicita un archivo robots.txt y obtiene un error de este tipo, el bot puede dejar de solicitar páginas por un tiempo. La lógica detrás de esto es que los motores de búsqueda no están seguros de si una página determinada puede o no ser rastreada, por lo que espera hasta que se pueda acceder a <b class="borde">robots.txt</b>.</p>
+            <p>~ 0.3% de los sitios web en nuestro conjunto de datos arrojaron 403 Forbidden o 5xx. Diferentes bots pueden manejar estos errores de manera diferente, por lo que no sabemos exactamente qué pudo haber visto Googlebot.</p>
+            <p>La última información disponible <a href="https://www.youtube.com/watch?v=JvYh1oe5Zx0&t=315s">de Google, de 2019</a>, es que hasta el 5% de los sitios web mostraban temporalmente 5xx en robots.txt, mientras que hasta el 26% eran inaccesibles. </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="center">
+            <a class="center" href="https://almanac.httparchive.org/static/images/2021/seo/robots-usage-presentation.png"><img src="https://almanac.httparchive.org/static/images/2021/seo/robots-usage-presentation.png" alt="" width="70%"></a>
+        </div>
+        <p class="center"><i>Figura 8.3. Desglose de los códigos de estado de robots.txt que encontró el robot de Google.</i></p>
+
+    </div>
+    <div>
+        <div>
+            <p>Dos cosas pueden causar la discrepancia entre el Archivo HTTP y los datos de Google:</p>
+            <ol>
+                <li>Google presenta datos de hace 2 años, mientras que HTTP Archive se basa en información reciente, o</li>
+                <li>HTTP Archive se centra en sitios web que son lo suficientemente populares como para incluirse en los datos de CrUX, mientras que Google intenta visitar todos los sitios web conocidos. </li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <h3><b class="borde">robots.txt</b> size</h3>
+        <div class="center">
+            <img src="https://almanac.httparchive.org/static/images/2021/seo/robots-txt-size-distribution.png" alt="" width="70%">
+        </div>
+        <p class="center"><i>Figura 8.4 <b class="borde">robots.txt</b>tamaño de distribución</i></p>
+    </div>
+    <div>
+        <div>
+            <p>La mayoría de los archivos robots.txt son bastante pequeños, con un peso de entre 0 y 100 kb. Sin embargo, encontramos más de 3000 dominios que tienen un tamaño de archivo robots.txt superior a 500 KiB, lo que supera el límite máximo de Google. Se ignorarán las reglas después de este límite de tamaño. </p>
+        </div>
+    </div>
+    <div>
+        <div class="center">
+            <img src="https://almanac.httparchive.org/static/images/2021/seo/robots-txt-user-agent.png" alt="" width="70%">
+        </div>
+        <p class="center"><i>Figura 8.5 <b class="borde">robots.txt</b> uso de agente de usuario.</i></p>
+    </div>
+    <div>
+        <div>
+            <p>Puede declarar una regla para todos los robots o especificar una regla para robots específicos. Los bots suelen intentar seguir la regla más específica para sus agentes de usuario. Disallow: Googlebot se referirá solo a Googlebot, mientras que Disallow: * hará referencia a todos los bots que no tengan una regla más específica.</p>
+            <p>Vimos dos robots populares relacionados con SEO: mj12bot (Majestic) y ahrefsbot (Ahrefs) entre los 5 agentes de usuario más especificados. </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Desglose del motor de búsqueda <b class="borde">robots.txt</b> </h3>
+        </div>
+    </div>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <th>Agente-Usuario</th>
+                    <th>Escritorio</th>
+                    <th>Móvil</th>
+                </tr>
+                <tr class="par">
+                    <td>Googlebot</td>
+                    <td class="numero">3.3%</td>
+                    <td class="numero">3.4%</td>
+                </tr>
+                <tr>
+                    <td>Bingbot</td>
+                    <td class="numero">2.5%</td>
+                    <td class="numero">3.4%</td>
+                </tr>
+                <tr class="par">
+                    <td>Baiduspider</td>
+                    <td class="numero">1.9%</td>
+                    <td class="numero">1.9%</td>
+                </tr>
+                <tr>
+                    <td>Yandexbot</td>
+                    <td class="numero">0.5%</td>
+                    <td class="numero">0.5%</td>                    
+                </tr>
+            </table>
+        </div>
+        <p  class="center"><i>Figura 8.6. Desglose del motor de búsqueda robots.txt.</i></p>
+    </div>
+    <div>
+        <div>
+            <p>Al analizar las reglas que se aplican a motores de búsqueda particulares, el robot de Google fue el que apareció con más referencias en el 3.3% de los sitios web rastreados.</p>
+            <p>Las reglas de robots relacionadas con otros motores de búsqueda, como Bing, Baidu y Yandex, son menos populares (respectivamente 2.5%, 1.9% y 0.5%). No miramos qué reglas se aplicaron a estos bots. </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Etiquetas canónicas</h3>
+            <p>La web es un conjunto masivo de documentos, algunos de los cuales son duplicados. Para evitar problemas de contenido duplicado, los webmasters pueden usar etiquetas canónicas para indicar a los motores de búsqueda qué versión prefieren indexar. Canonicals también ayuda a consolidar señales como enlaces a la página de clasificación. </p>
+
+        </div>
+    </div>
+    <div>
+        <div class="center">
+            <img src="https://almanac.httparchive.org/static/images/2021/seo/canonical-tag-usage.png" alt="" width="70%">
+        </div>
+        <p class="center">Figura 8.7 Uso canónico.</p>
+    </div>
+    <div>
+        <div>
+            <p>Los datos muestran una mayor adopción de etiquetas canónicas a lo largo de los años. Por ejemplo, la edición de 2019 muestra que el 48,3% de las páginas móviles usaban una etiqueta canónica. En la edición de 2020, el porcentaje creció al 53,6%, y en 2021 vemos el 58,5%.</p>
+                <p>Más páginas móviles tienen configurados canónicos que sus contrapartes de escritorio. Además,
+                    el 8,3% de las páginas móviles y el 4,3% de las de escritorio se canonizan a otra página para
+                    que den una pista clara a Google y otros motores de búsqueda de que la página indicada en la
+                    etiqueta canónica es la que debería indexarse.</p>
+                <p>Un mayor número de páginas canonicalizadas en dispositivos móviles parece estar relacionado con
+                    sitios web que utilizan URL móviles independientes. En estos casos, Google recomienda colocar
+                    una etiqueta rel = "canonical" que apunte a las URL de escritorio correspondientes.</p>
+                <p>Nuestro conjunto de datos y análisis se limitan a las páginas de inicio de los sitios web; Es 
+                    probable que los datos sean diferentes al considerar todas las URL de los sitios web probados. </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Dos métodos para implementar etiquetas canónicas</h3>
+
+            <p>Al implementar canónicos, existen dos métodos para especificar etiquetas canónicas:</p>
+            <ul>
+                <li>En la sección <b class="centro">&lt;head&gt;</b> de HTML de una página</li>
+                <li>En los header HTML (a través del encabezado <b class="centro">Link</b> HTTP)</li>
+            </ul>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/canonical-raw-rendered-usage.png" alt="" width="70%">
+           
+            </div>
+            <p>Explore los resultados Muestre la descripción de la Figura 8.8
+                Figura 8.8. Uso canónico sin procesar versus renderizado.
+                Implementar etiquetas canónicas en el <b class="centro">&lt;head&gt;</b> de una página HTML es mucho más popular que usar
+                el método de encabezado <b class="centro">Link</b>. La implementación de la etiqueta en la sección principal generalmente
+                se considera más fácil, por lo que ese uso es mucho mayor.
+            </p>
+            <p> <p>También vimos un ligero cambio &lt;1%) en lo canónico entre el HTML sin procesar entregado y el HTML renderizado después de que se haya aplicado JavaScript. </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Etiquetas canónicas en conflicto</h3>
+            <p>A veces, las páginas contienen más de una etiqueta canónica. Cuando hay señales contradictorias como esta, los motores de búsqueda tendrán que resolverlo. Uno de los defensores de las búsquedas de Google, Martin Splitt, dijo una vez que provoca un comportamiento indefinido por parte de Google.
+            </p>
+            <p>La figura anterior muestra que hasta el 1.3% de las páginas móviles tienen diferentes etiquetas canónicas en el HTML inicial y la versión renderizada.
+            </p>
+            <p>El capítulo del año pasado señaló que "se puede encontrar un conflicto similar con los diferentes métodos de implementación, con un 0.15% de las páginas móviles y un 0.17% de las de escritorio que muestran conflictos entre las etiquetas canónicas implementadas a través de sus encabezados HTTP y HTML".
+            </p>
+            <p>Los datos de este año sobre ese conflicto son aún más preocupantes. Las páginas envían señales contradictorias en el 0,4% de los casos en computadoras de escritorio y en el 0,3% de los casos en dispositivos móviles.
+            </p>
+            <p>Como los datos de Web Almanac solo se ven en las páginas de inicio, puede haber problemas adicionales con las páginas ubicadas más profundamente en la arquitectura, que son páginas que probablemente necesiten señales canónicas.
+            </p>
+
+        </div>
+    </div>
+<!--------------------------------------------------Ancla2-------------------------------------------->
+    <div>
+        <div>
+            <a id="Ancla2"></a>
+            <h2>Experiencia de página</h2>
+            <p>2021 vio un mayor enfoque en la experiencia del usuario. Google lanzó la Actualización de experiencia de página que incluía señales existentes, como HTTPS y compatibilidad con dispositivos móviles, y nuevas métricas de velocidad llamadas Core Web Vitals.
+            </p>
+            <h4>HTTPS</h4>
+
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/usage-of-https.png" alt="" width="70%">
+            </div>
+            <p class="center"><i>Figure 8.9. Percentage of Desktop and Mobile pages served with HTTPS.</i></p>
+
+            <p>La adopción de HTTPS sigue aumentando. HTTPS fue el predeterminado en el 81,2% de las páginas móviles y el 84,3% de las páginas de escritorio. Eso es casi un 8% en los sitios web para dispositivos móviles y un 7% en los sitios web para computadoras de escritorio año tras año.</p>
+            <p>Para el encabezado Vary: User-Agent, las cifras se mantuvieron prácticamente sin cambios con el 12,6% de las páginas de escritorio y el 13,4% de las páginas móviles con esta huella.</p>
+
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h2>Compatibilidad con dispositivos móviles</h2>
+            <p>Este año se ha producido un ligero repunte en la compatibilidad con dispositivos móviles. Las implementaciones de diseño receptivo han aumentado, mientras que el servicio dinámico se ha mantenido relativamente plano.
+            </p>
+            <p>El diseño receptivo envía el mismo código y ajusta la forma en que se muestra el sitio web en función del tamaño de la pantalla, mientras que el servicio dinámico envía un código diferente según el dispositivo. La metaetiqueta de la ventana gráfica se utilizó para identificar los sitios web receptivos frente al encabezado <b class="borde">Vary: User-Agent</b> para identificar los sitios web que utilizan el servicio dinámico.
+            </p>
+            <p class="grande"><b class="center">91,1%</b></p>
+            <p class="center">Figura 8.10. Porcentaje de páginas móviles que utilizan la metaetiqueta de la ventana gráfica, una señal de compatibilidad con dispositivos móviles.</p>
+            <p>El 91,1% de las páginas móviles incluyen la metaetiqueta de la ventana gráfica, frente al 89,2% en 2020.El 86,4% de las páginas de escritorio también incluían la metaetiqueta de la ventana gráfica, frente al 83,8% en 2020.</p>
+
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/vary-usage-agent-header-usage.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.11. Variar: uso del encabezado de usuario-agente.</p>
+            <p class="grande"><b class="center">13,05%</b></p>
+            <p class="center ">Figura 8.12. Porcentaje de páginas móviles que no utilizan tamaños de fuente legibles.</p>
+            <p>Una de las principales razones del fracaso de la compatibilidad con dispositivos móviles fue que el 13,5% de las páginas no utilizaban un tamaño de fuente legible. Lo que significa que el 60% o más del texto tenía un tamaño de fuente inferior a 12 píxeles, lo que puede ser difícil de leer en un dispositivo móvil.</p>
+      </div>
+    </div>
+    <div>
+        <div>
+            <h2>Elementos fundamentales de la Web</h2>
+            <p>Core Web Vitals son las nuevas métricas de velocidad que forman parte de las señales de Page Experience de Google. Las métricas miden la carga visual con Largest Contentful Paint (LCP), la estabilidad visual con Cumulative Layout Shift (CLS) y la interactividad con First Input Delay (FID).
+            </p>
+            <p>Los datos provienen del Informe de experiencia del usuario de Chrome (CrUX), que registra datos del mundo real de los usuarios de Chrome que optaron por participar.
+            </p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/core-web-vitals-trend.png" alt="" width="70%">
+            </div>
+            <p class="center"><i>Figura 8.13. Tendencia de métricas básicas de web vitals.</i></p>
+            <p>El 29% de los sitios web móviles están superando los umbrales de Core Web Vitals, frente al 20% del año pasado. La mayoría de los sitios web están aprobando la FID, pero los propietarios de sitios web parecen tener dificultades para mejorar CLS y LCP. Consulte el capítulo Rendimiento para obtener más información sobre este tema.</p>               
+       </div>
+    </div>
+
+    <!--------------------------------------------------Ancla3-------------------------------------------->
+
+    <div>
+        <div>
+            <a id="Ancla3"></a>
+            <h2>En la página</h2>
+            <p>Los motores de búsqueda analizan el contenido de su página para determinar si es un resultado relevante para la consulta de búsqueda. Otros elementos de la página también pueden afectar la clasificación o la apariencia en los motores de búsqueda.
+            </p>
+            <h2>Metadatos</h2>
+            <p>Los metadatos incluyen elementos &lt;title&gt; y etiquetas &lt;meta name = "description"&gt;. Los metadatos pueden afectar directa y / o indirectamente al rendimiento de SEO.
+            </p>
+            <div class="center"><img src="https://almanac.httparchive.org/static/images/2021/seo/title-meta-description-usage.png" alt="" width="70%">
+            </div>
+            <p class="center"><i>Figura 8.14. Desglose del uso del título y la meta descripción.</i></p>
+
+            <p>En 2021, el 98,8% de las páginas de escritorio y móviles tenían elementos &lt;title&gt;. El 71,1% de las páginas de inicio móviles y de escritorio tenían etiquetas &lt;meta name = "description"&gt;.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Elemento &lt;title&gt;</h2>
+            <p>El elemento &lt;title&gt; es un factor de clasificación en la página que proporciona una fuerte pista sobre la relevancia de la página y puede aparecer en la página de resultados del motor de búsqueda (SERP). En agosto de 2021, Google comenzó a reescribir más títulos en sus resultados de búsqueda.
+            </p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/title-word-counts.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.15. Número de palabras utilizadas en los elementos del título.</p>
+
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/title-character-counts.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.16. Número de caracteres utilizados en los elementos del título.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>En 2021</h2>
+            <ul>
+                <li>La página mediana &lt;title&gt; contenía 6 palabras.</li>
+                <li>La página media &lt;title&gt; contenía 39 y 40 caracteres en computadoras de escritorio y dispositivos móviles, respectivamente.</li>
+                <li>El 10% de las páginas tenían elementos &lt;title&gt; que contenían 12 palabras.</li>
+                <li>El 10% de las páginas de escritorio y móviles tenían elementos &lt;title&gt; que contenían 74 y 75 caracteres, respectivamente.                </li>
+            </ul>
+            <p>La mayoría de estas estadísticas se mantienen relativamente sin cambios desde el año pasado. Recuerde que estos son títulos en las páginas de inicio que tienden a ser más cortos que los que se usan en páginas más profundas.
+            </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Etiqueta de meta descripción</h2>
+            <p>La etiqueta no afecta directamente a las clasificaciones. Sin embargo, puede aparecer como la descripción de la página en el SERP. &lt;meta name = "description"&gt;</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/number-of-images-per-page.png" alt=""width=70%>
+            </div>
+            <p class="center">Figura 8.17. Número de palabras utilizadas en las meta descripciones.</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/meta-character-counts.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.18. Número de caracteres utilizados en las meta descripciones.</p>
+
+            <p>En 2021</p>
+            <ul>
+                <li>La etiqueta mediana de página de escritorio y móvil contenía 20 y 19 palabras, respectivamente.&lt;meta name = "description"&gt;</li>
+                <li>La etiqueta de página mediana de escritorio y móvil contenía 138 y 127 caracteres, respectivamente.&lt;meta name = "description"&gt;</li>
+                <li>el 10% de las páginas de escritorio y móviles tenían etiquetas que contenían 35 palabras.&lt;meta name = "description"&gt;</li>
+                <li>el 10% de las páginas de escritorio y móviles tenían etiquetas que contenían 232 y 231 caracteres, respectivamente.&lt;meta name = "description"&gt;</li>
+            </ul>
+            <p>Estas cifras se mantienen relativamente sin cambios con respecto al año pasado.</p>
+
+
+        </div>
+    </div>
+
+
+<!--------------------------------------------------Ancla4-------------------------------------------->
+
+
+    <div>
+        <div>
+            <a id="Ancla4"></a>
+            <h3>Imágenes</h3>
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/number-of-images-per-page.png" alt="" width="70%">
+                <p class="center">Figura 8.19. Número de imágenes en cada página.</p>
+            </div>
+            <p>Las imágenes pueden afectar directa e indirectamente al SEO, ya que afectan los rankings de búsqueda de imágenes y el rendimiento de la página.</p>
+            <ul>
+                <li>El 10% de las páginas tienen dos o menos etiquetas. Eso es cierto tanto para computadoras de escritorio como para dispositivos móviles.&lt;img&gt;</li>
+                <li>La página de escritorio mediana tiene 21 etiquetas, mientras que la página móvil mediana tiene 19 etiquetas.&lt;img&gt;&lt;img&gt;</li>
+                <li>el 10% de las páginas de escritorio tienen 83 o más etiquetas. el 10% de las páginas móviles tienen 73 o más etiquetas.&lt;img&gt;&lt;img&gt;</li>
+            </ul>
+            <p>Estos números han cambiado muy poco desde 2020.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Atributos <b class="border">alt</b> de imagen</h3>
+            <p>El atributo en el elemento ayuda a explicar el contenido de la imagen e impacta en la accesibilidad <b class="border">alt</b>&lt;img&gt;</p>
+            <p>Tenga en cuenta que los atributos que faltan pueden no indicar un problema. Las páginas pueden incluir imágenes extremadamente pequeñas o en blanco que no requieren un atributo por razones de SEO (ni accesibilidad).altalt</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/images-with-alt-attribute.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.20. Porcentaje de imágenes que contienen atributos. alt</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/images-with-blank-alt-attribute.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.21. Porcentaje de atributos que estaban en blanco. alt</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/images-with-missing-alt-attribute.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.22. Porcentaje de imágenes a las que les faltan atributos alt.</p>
+            <p>Encontramos que:</p>
+            <ul>
+                <li>En la página de escritorio mediana, el 56,5% de las etiquetas tienen un atributo. Este es un ligero aumento en comparación con 2020.<b class="borde">&lt;img&gt;ALT</b></li>
+                <li>En la página móvil mediana, el 54,6% de las etiquetas tienen un atributo. Este es un ligero aumento en comparación con 2020.<b class="borde">&lt;img&gt;ALT</b></li>
+                <li>Sin embargo, en las páginas medianas de escritorio y móviles, el 10,5% y el 11,8% de las etiquetas tienen atributos en blanco (respectivamente). Esto es efectivamente lo mismo que en 2020.<b class="borde">&lt;img&gt;ALT</b></li>
+                <li>En la mediana de las páginas de escritorio y móviles, faltan cero o casi cero etiquetas. Esta es una mejora con respecto a 2020, cuando al 2-3% de las etiquetas en las páginas medianas les faltaban atributos. <b class="borde">&lt;img&gt;ALT</b></li>
+            </ul>
+       </div>
+    </div>
+    <div>
+        <div>
+            <h3>Atributos de carga de imágenes</h3>
+            <p>El atributo en los elementos afecta a la forma en que los agentes de usuario priorizan la representación y la visualización de imágenes en la página. Puede afectar la experiencia del usuario y el rendimiento de la carga de la página, los cuales afectan el éxito de SEO  loading&lt;img&gt;</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/image-loading-property-usage.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.23. Uso de la propiedad de carga de imágenes.</p>
+
+            <p>Vimos que</p>
+            <ul>
+                <li>el 85,5% de las páginas no utilizan ninguna propiedad de <b class="border">imagen.loading</b></li>
+                <li>el 15,6% de las páginas utilizan lo que retrasa la carga de una imagen hasta que está cerca de estar en la ventana gráfica.<b class="border">loading="lazy"</b></li>
+                <li>el 0,8% de las páginas utilizan lo que carga la imagen tan pronto como el navegador carga el código.<b class="border">loading="eager"</b></li>
+                <li>el 0,1% de las páginas utilizan propiedades de carga no válidas.</li>
+                <li>el 0,1% de las páginas utilizan el método de carga predeterminado del navegador. <b class="border">loading="auto"</b></li>
+            </ul>
+        </div>
+    </div>
+
+
+<!--------------------------------------------------Ancla5-------------------------------------------->
+
+
+    <div>
+        <div>
+            <a id="Ancla5"></a>
+            <h3>Recuento de palabras</h3>
+            <p>El número de palabras en una página no es un factor de clasificación, pero la forma en que las páginas entregan palabras puede afectar profundamente las clasificaciones. Las palabras pueden estar en el código de la página sin procesar o en el contenido renderizado.</p>
+            <h3>Recuento de palabras renderizadas</h3>
+            <p>Primero, miramos el contenido de la página renderizada. Renderizado es el contenido de la página después de que el navegador haya ejecutado todo JavaScript y cualquier otro código que modifique el DOM o CSSOM.</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/visible-rendered-words-percentile.png" alt="" width="70%">
+            </div>
+            <p class="center"><i>Figura 8.24. Palabras visibles representadas por percentil.</i></p>
+            <ul>
+                <li>La mediana de la página de escritorio renderizada contiene 425 palabras, frente a las 402 palabras de 2020.</li>
+                <li>La mediana de la página móvil renderizada contiene 367 palabras, frente a las 348 palabras de 2020.</li>
+                <li>Las páginas móviles renderizadas contienen un 13,6% menos de palabras que las páginas de escritorio renderizadas. Ten en cuenta que Google es un índice solo para dispositivos móviles. Es posible que el contenido que no esté en la versión móvil no se indexe.</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Recuento de palabras sin procesar</h3>
+            <p>A continuación, observamos el contenido de la página raw Raw es el contenido de la página antes de que el navegador haya ejecutado JavaScript o cualquier otro código que haya modificado el DOM o CSSOM. Es el contenido "en bruto" entregado y visible en el código fuente.</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/visible-raw-words-percentile.png" alt="" width="70%">
+            </div>
+            <p class="center"><i>Figura 8.25. Palabras visibles crudas por percentil.</i></p>
+            <ul>
+                <li>La página de escritorio sin procesar mediana contiene 369 palabras, frente a 360 palabras en 2020.</li>
+                <li>La mediana de la página móvil sin procesar contiene 321 palabras, frente a las 312 palabras de 2020.</li>
+                <li>Las páginas móviles sin procesar contienen un 13,1% menos de palabras que las páginas de escritorio renderizadas. Ten en cuenta que Google es un índice solo para dispositivos móviles. Es posible que el contenido que no esté en la versión HTML móvil no se indexe.</li>
+            </ul>
+            <p>En general, el 15% del contenido escrito en dispositivos de escritorio es generado por JavaScript y el 14,3% en versiones móviles.</p>
+        </div>
+    </div>
+
+
+<!--------------------------------------------------Ancla6-------------------------------------------->
+
+
+    <div>
+        <div>
+            <a id="Ancla6"></a>
+            <h3>Datos estructurados</h3>
+            <p>Históricamente, los motores de búsqueda han trabajado con datos no estructurados: las pilas de palabras, párrafos y otros contenidos que componen el texto de una página.</p>
+            <p>El marcado de esquema y otros tipos de datos estructurados proporcionan a los motores de búsqueda otra forma de analizar y organizar el contenido. Los datos estructurados impulsan muchas de las funciones de búsqueda de Google.</p>
+            <p>Al igual que las palabras en la página, los datos estructurados se pueden modificar con JavaScript.</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/structured-data-usage.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.26. Uso de datos de estructura.</p>
+            <p>El 42,5% de las páginas móviles y el 41,8% de las páginas de escritorio tienen datos estructurados en el HTML. JavaScript modifica los datos estructurados en el 4,7% de las páginas móviles y el 4,5% de las páginas de escritorio.</p>
+            <p>En el 1,7% de las páginas móviles y el 1,4% de las páginas de escritorio, JavaScript agrega datos estructurados donde no existían en la respuesta HTML inicial.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Formatos de datos estructurados más importantes</h3>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/structured-data-formats.png" alt="" width="70%">
+            </div>  
+            <p class="center"> Figura 8.27. Desglose de formatos de datos estructurados.</p>
+            <p>Hay varias formas de incluir datos estructurados en una página: JSON-LD, microdatos, RDFa y microformatos2. JSON-LD es el método de implementación más popular. Más del 60% de las páginas de escritorio y móviles que tienen datos estructurados lo implementan con JSON-LD.</p>
+            <p>Entre los sitios web que implementan datos estructurados, más del 36% de las páginas de escritorio y móviles usan microdatos y menos del 3% de las páginas usan RDFa o microformatos2.</p>
+            <p>La adopción de datos estructurados ha aumentado un poco desde el año pasado. Se utiliza en el 33,2% de las páginas en 2021 frente al 30,6% en 2020.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Tipos de esquema más populares</h3>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/most-popular-schema-types.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.28. Tipos de esquema más populares.</p>
+            <p>Los tipos de esquema más populares que se encuentran en las páginas de inicio son , , . es lo que impulsa el cuadro de búsqueda de enlaces de sitio,que Google puede elegir mostrar en la página de resultados de búsqueda.WebSiteSearchActionWebPageSearchAction</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>&lt;h&gt;elementos (encabezados)></h3>
+            <p>Los elementos de encabezamiento (, , etc.) son un elemento estructural importante. Si bien no afectan directamente a las clasificaciones, ayudan a Google a comprender mejor el contenido de la página.&lt;h1&gt;&lt;h2&gt;</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/heading-element-usage.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.29. Uso del elemento de encabezado.</p>
+            <p>Para los encabezados principales, más páginas (71,9%) tienen s que tienen s (65,4%). No hay una explicación obvia para la discrepancia. El 61,4% de las páginas de escritorio y móviles usan s y menos del 39% usan s.&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;</p>
+            <p>Hubo muy poca diferencia entre el uso de encabezados de escritorio y móviles, ni hubo un cambio importante en comparación con 2020.</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/non-empty-heading-element-usage.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.30. Uso de elementos de encabezado no vacíos.
+            </p>
+            <p>Sin embargo, un porcentaje menor de páginas incluye elementos no vacíos, en particular . Los sitios web a menudo envuelven imágenes de logotipos en elementos en las páginas de inicio, y esto puede explicar la discrepancia.&lt;h&gt; h1 &lt;h1&gt;</p>
+        </div>
+    </div>
+
+
+<!--------------------------------------------------Ancla7-------------------------------------------->
+
+
+    <div>
+        <div>
+            <a id="Ancla7"></a>
+            <h3>Enlaces</h3>
+            <p>Los motores de búsqueda utilizan enlaces para descubrir nuevas páginas y para pasar PageRank, lo que ayuda a determinar la importancia de las páginas.</p>
+            <div class="center">
+                <b class="grande">16.0%</b>
+            </div>
+            <p class="center">Figura 8.31. Páginas que utilizan textos de enlace no descriptivos.</p>
+            <p>Además de PageRank, el texto utilizado como ancla de enlace ayuda a los motores de búsqueda a comprender de qué se trata una página vinculada. Lighthouse tiene una prueba para verificar si el texto de anclaje utilizado es texto útil o si es texto de anclaje genérico como "obtener más información" o "hacer clic aquí", que no son muy descriptivos. El 16% de los enlaces probados no tenían texto de anclaje descriptivo, lo cual es una oportunidad perdida desde una perspectiva de SEO y también mala para la accesibilidad.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Enlaces internos y externos</h3>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/outgoing-internal-link.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.32. Enlaces internos de páginas de inicio.</p>
+            <p>Los enlaces internos son enlaces a otras páginas en el mismo sitio. Las páginas tenían menos enlaces en las versiones móviles en comparación con las versiones de escritorio.</p>
+            <p>Los datos muestran que el número medio de enlaces internos en el escritorio es un 16% más alto que el móvil, 64 frente a 55 respectivamente. Es probable que esto se deba a que los desarrolladores tienden a minimizar los menús de navegación y los pies de página en los dispositivos móviles para que sean más fáciles de usar en pantallas más pequeñas.</p>
+            <p>Los sitios web más populares (los 1.000 principales según los datos de CrUX) tienen más enlaces internos salientes que los sitios web menos populares. 144 en el escritorio frente a 110 en el móvil, ¡más de dos veces más que la mediana! Esto puede deberse al uso de megamenús en sitios más grandes que generalmente tienen más páginas.</p>
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/outgoing-external-links.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.33. Enlaces externos desde páginas de inicio.</p>
+            <p>Los enlaces externos son enlaces de un sitio web a un sitio diferente. Los datos muestran de nuevo menos enlaces externos en las versiones móviles de las páginas.</p>
+            <p>Los números son casi idénticos a los de 2020. A pesar de que Google lanzó la primera indexación móvil este año, los sitios web no han llevado sus versiones móviles a la paridad con sus versiones de escritorio.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Enlaces de texto e imagen</h3>
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/text-links.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.34. Enlaces de texto desde páginas de inicio.</p>
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/image-links.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.35. Enlaces de imágenes de páginas de inicio.</p>
+            <p>Si bien una parte significativa de los enlaces en la web se basan en texto, una parte también vincula imágenes a otras páginas. El 9,2% de los enlaces en páginas de escritorio y el 8,7% de los enlaces en páginas móviles son enlaces de imagen. Con los enlaces de imagen, los atributos establecidos para la imagen actúan como texto de anclaje para proporcionar un contexto adicional sobre de qué se tratan las páginas.alt</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Atributos de vínculo</h3>
+            <p>En septiembre de 2019, Google introdujo atributos que permiten a los editores clasificar los enlaces como contenido patrocinado o generado por el usuario. Estos atributos se suman a los que se introdujeron anteriormente en 2005. Los nuevos atributos, c y , añaden información adicional a los vínculos.rel=nofollowrel=ugrel=sponsored</p>
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/rel-attibute-usage.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.36. Uso del atributo Rel.</p>
+            <p>Los nuevos atributos siguen siendo bastante raros, al menos en las páginas de inicio, con aparecer en el 0,4% de las páginas móviles y aparecer en el 0,3% de las páginas móviles. Es probable que estos atributos estén viendo más adopción en páginas que no son páginas de inicio.rel="ugc"rel="sponsored"</p>
+            <p>rel="follow" y aparecen en más páginas que y . Si bien esto no es un problema, Google ignora y porque no son atributos oficiales.rel=dofollowrel="ugc"rel="sponsored"rel="follow"rel="dofollow"</p>
+            <p>rel="nofollow" se encontró en el 30,7% de las páginas móviles, similar al año pasado. Con el atributo tan utilizado, no es de extrañar que Google haya cambiado a una pista, lo que significa que pueden elegir si lo respetan o no.nofollow</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Páginas móviles aceleradas (AMP)</h3>
+            <p>En 2021 se produjeron cambios importantes en el ecosistema de páginas móviles aceleradas (AMP). AMP ya no es <a href="https://developers.google.com/search/blog/2021/04/more-details-page-experience#details">necesario para el carrusel de páginas principales, ya no es necesario para la aplicación Google Noticias, y Google ya no mostrará el logotipo de AMP junto a los resultados de AMP en el SERP</a>.</p>
+            <div class="center">
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/amp-markup-types.png" alt="" width="70%">
+            </div>
+            <p class="center"><i>Figura 8.37. Uso del atributo AMP.</i></p>
+        </div>
+    </div>
+
+
+<!--------------------------------------------------Ancla8-------------------------------------------->
+
+
+    <div>
+        <div>
+            <a id="Ancla8"></a>
+            <h3>Internacionalización</h3>
+            <div class="center">
+                <p><i>Si tienes varias versiones de una página para diferentes idiomas o regiones, informa a Google sobre estas diferentes variaciones. Si lo hace, la Búsqueda de Google ayudará a orientar a los usuarios a la versión más adecuada de tu página por idioma o región.</i></p>
+                <p style="text-align: center;">— Documentación de Google SEO</p>
+            </div>
+            <p>Para que los motores de búsqueda sepan acerca de las versiones localizadas de tus páginas, usa etiquetas. los atributos también son utilizados por Yandex y Bing(hasta cierto punto).hreflanghreflang</p>
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/hreflang-usage.png" alt="" width="70%">
+            </div>
+            <p class="center"><i>Figura 8.38. Gráfico de atributos de etiqueta hreflang superiorFigura 8.38. Gráfico de atributos de etiqueta hreflang superior</i></p>
+            <p>el 9,0% de las páginas de escritorio y el 8,4% de las páginas móviles utilizan el atributo hreflang.</p>
+            <p>Hay tres formas de implementar la información: en elementos HTML, encabezados y con sitemaps XML. Estos datos no incluyen datos para sitemaps XML.hreflang<head>X-robots</p>
+            <p>El atributo hreflang más popular es (versión en inglés). El 4,75% de las páginas de inicio móviles lo utilizan y el 5,32% de las páginas de inicio de escritorio."en"</p>
+            <p>x-default (también llamada versión de reserva) se utiliza en el 2,56% de los casos en dispositivos móviles. Otros idiomas populares abordados por atributos son el francés y el español.hreflang</p>
+            <p>Para Bing, <a href="https://twitter.com/facan/status/1304120691172601856">hreflang es una "señal mucho más débil" que el encabezado de lenguaje de contenido.</a>   </p>
+            <p>Al igual que con muchos otros parámetros de SEO, <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language">el lenguaje de contenido</a> tiene múltiples métodos de implementación, que incluyen:</p>
+            <ol>
+                <li>Respuesta del servidor HTTP</li>
+                <li>Etiqueta HTML</li>
+            </ol>
+            <div>
+                <img src="https://almanac.httparchive.org/static/images/2021/seo/language-usage-html-http.png" alt="" width="70%">
+            </div>
+            <p class="center">Figura 8.39. Uso del lenguaje (encabezado HTML y HTTP).</p>
+            <p>El uso de una respuesta de servidor HTTP es la forma más popular de implementar . El 8,7% de los sitios web lo usan en el escritorio, mientras que el 9,3% en el móvil.content-language</p>
+            <p>El uso de la etiqueta HTML es menos popular, ya que el lenguaje de contenido aparece en solo el 3.3% de los sitios web móviles.</p>
+        </div>
+    </div>
+
+
+<!--------------------------------------------------Ancla9-------------------------------------------->
+
+    <div>
+        <div>
+            <a id="Ancla9"></a>
+            <h3>Conclusión</h3>
+            <p>Los sitios web están mejorando lentamente desde una perspectiva de SEO. Probablemente debido a una combinación de sitios web que mejoran su SEO y las plataformas que alojan sitios web también mejoran. La web es un lugar grande y desordenado, por lo que todavía hay mucho que hacer, pero es bueno ver un progreso constante.</p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+    
+    
+    
+    
+
+  div{width:300px;height:200px;margin:20px;
+	display:inline-block;
+	border:1px solid #000;
+}
+
+
+.españa{
+    background-image:linear-gradient(#AD1519 25%, 	#FABD00 25%, 	#FABD00 75%, #AD1519 75%);
+}
+.españa img{
+    margin-left: 30%;
+    margin-top: 15%;
+}
+
+
+.colombia{
+	background-image:linear-gradient(yellow 33%, blue 33%, blue 66.66%, red 66.66%);
+}
+
+.italia{
+    background-image:linear-gradient(90deg, #008C45 33%, #F4F9FF 33%, #F4F9FF 66.66%, #CD212A 66.66%);
+}
+
+
+.alemania{
+    background-image:linear-gradient(#000000 33%, #FF0000 33%, #FF0000 66.66%, #FFCC00 66.66%);
+	color:#fff;
+}
+
+.francia{
+    background-image:linear-gradient(90deg,#ed2939 33%, #ffffff 33%, #ffffff 66.66%, #002395 66.66%);
+}
+
+.japon{
+	background-image:radial-gradient(circle, #BC002D 33%, white 33%, white);
+}
+
+.polonia{
+	background-image:linear-gradient(white 50%, #BC002D 50%, #BC002D);
+}
