@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta name="description" content="Aprendiendo CSS">
+  	<meta name="author" content= "Adrián Jesús">
+	  <title>Inicio - Adrian - LMSGI</title>
+  	<link rel="shortcut icon" href="..ico/corazon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Ejercicio 5 LMSGI</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">LMSGI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://aulasvirtuales.ieslosmanantiales.es/course/view.php?id=162" target="blank">Plataforma</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bloque 1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../Ejercicios/ejercicio01/ejercicio1.html">Almanac SEO</a></li>
+                <li><a class="dropdown-item" href="../Ejercicios/ejercicio02.html">Selectores CSS</a></li>
+                <li><a class="dropdown-item" href="../Ejercicios/ejercicio03.html">Aplicando estilos</a></li>
+                <li><a class="dropdown-item" href="../Ejercicios/Ejercicio Suzuki/Ejercicio5.html">Mundo Suzuki</a></li>
+                <li><a class="dropdown-item" href="../Ejercicios/Banderitas/ejercicio6.html">Banderitas</a></li>
+                <li><a class="dropdown-item" href="../Ejercicios/ejercicio05.html">Horario</a></li>
+                <li><a class="dropdown-item" href="../Ejercicios/ejercicio06.html">Imágenes</a></li>                
+                <li><hr class="dropdown-divider"></li>
+                <li><a onclick="javascript:window.open('../Recursos/css.pdf','','width=600,height=400,left=50,top=50,toolbar=yes');">&nbsp &nbsp CSS Cheatsheet</a></li>
+                <li><a onclick="javascript:window.open('../Recursos/Diapositiva 1.pdf','','width=600,height=400,left=50,top=50,toolbar=yes');">&nbsp &nbsp Diapositiva 1</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bloque 2
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../Bloque2/Ejercicio02/mundocss.html">Mundo CSS</a></li>
+                <li><a class="dropdown-item" href="../Bloque2/Ejercicio03/herencia.html">Herencia</a></li>
+                <li><a class="dropdown-item" href="../Bloque2/Ejercicio04/cascada.html">Cascada</a></li>
+                <li><a class="dropdown-item" href="../Bloque2/Ejercicio05/sidebar.html">Sidebar</a></li>
+                <li><a class="dropdown-item" href="../Bloque2/Ejercicio07/links.html">Vínculos</a></li>
+                <li><a class="dropdown-item" href="../Bloque2/Ejercicio06/bg_images.html">Imágenes</a></li>                
+                <li><a class="dropdown-item" href="../Bloque2/Ejercicio08/disposicion.html">Disposición</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a onclick="javascript:window.open('../Bloque2/Diapositiva 1.pdf','','width=600,height=400,left=50,top=50,toolbar=yes');">&nbsp &nbsp Diapositiva 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Adrián Jesús Batista Escalona</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+    <div class="container">
+      <h1>Horario de clase</h1>
+      <table class="table table-dark">
+        <tr>
+          <th>Hora</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miercoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+        </tr>
+        <tr>
+          <td>08:30</td>
+          <td rowspan="3" class="gbd">GBD</td>
+          <td rowspan="3" class="plar">PLAR</td>
+          <td rowspan="3" class="gbd">GBD</td>
+          <td rowspan="3" class="plar">PLAR</td>
+          <td rowspan="2" class="lmsgi">LMSGI</td>
+        </tr>
+        <tr>
+          <td>9:30</td>
+        </tr>
+        <tr>
+          <td>10:30</td>
+          <td class="fol">FOL</td>
+        </tr>
+        <tr>
+          <td>11:30</td>
+          <td class="fol">FOL</td>
+          <td class="fol">FOL</td>
+          <td class="iso">ISO</td>
+          <td class="fuh">FUH</td>
+          <td class="iso">ISO</td>
+        </tr>
+          
+        <tr>
+          <td>12:00</td>
+          <td colspan="5" style="text-align:center;"><b>Recreo</b></td>
+        </tr>
+        <tr>
+          <td>13:00</td>
+          <td rowspan="2" class="lmsgi">LMSGI</td>
+          <td rowspan="2" class="iso">ISO</td>
+          <td rowspan="2" class="iso">ISO</td>
+          <td rowspan="2" class="fuh">FUH</td>
+          <td rowspan="2" class="iso">ISO</td>
+        </tr>
+        <tr>
+          <td>14:00</td>       
+      </table>
+
+          <script src="../js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

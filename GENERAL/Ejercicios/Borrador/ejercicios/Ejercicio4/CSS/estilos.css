@@ -1,0 +1,374 @@
+
+
+body{
+    background-color: #900c3f;
+}
+
+
+
+.contenedor1{
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color:fuchsia;
+    padding: 5%;
+    border-radius: 10px;
+
+
+}/*============== CSS EJERCICIO 2==========*/
+
+body{
+    background-color: #900c3f;
+}
+
+/*==================NAVBAR=================*/
+
+#menu {
+	background: #ff5733;
+	color: #FFF;
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 10px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #0099CC;
+	background: #ffc30f
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+
+
+
+
+
+
+/*================================xxxxxxx======================================*/
+
+body {
+    background-image: url("https://s3.amazonaws.com/impressivewebs/3923/repeat.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Playfair Display', serif;
+    margin: 20px 65px 20px 65px;
+
+}
+
+main{
+    color: #ffffff;
+    margin: auto;
+    color: black;
+    width: 720px;
+    height: auto;
+}
+
+.contenedor_nav{
+    text-align: center;
+    border: gold;
+    padding: 2%;
+    color: gold;
+    
+    outline: none;
+}
+
+
+
+.contenedor{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(25, 100, 70, 20);
+    border: dotted rgba(200, 150, 10, 30) 7px;
+    border-radius: 20px 0px 20px 0px;
+    margin:50px auto 50px auto;
+}
+
+/*===Contenido 0 ===*/
+.caja{
+    padding: 50px;
+    text-align: center;
+    border: solid rgba(200, 150, 10, 30) 7px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: #ff7070;
+    
+}
+
+.prueba{
+    color: #00ff00;
+    
+}
+
+.prueba2{
+    color: rgba(200, 150, 10, 30)
+}
+
+/*===Contenido 1 ===*/
+.caja1{
+    background-color: rgba(10, 100, 100, 100);
+}
+.caja1 h2{
+    
+    text-shadow: 2px 2px 2px #ff000f;
+    color: #00f000
+    
+}
+
+.caja1:hover{
+    color: pink;
+    transition: 0.5s ease-in;
+}
+
+
+/*===Contenido 2 ===*/
+
+.caja2 p{
+    background-color: rgba(200,200,41,70);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+/*===Contenido 3 ===*/
+
+.caja3{
+    border: solid rgba(0, 0, 0, 0) 5px;
+    border-radius: 20px 0px 20px 0px;
+    background-image: url("https://s3.amazonaws.com/impressivewebs/3923/repeat.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+
+/*=========Viernes 21 Enerp =====*/
+.contenedor_titulo{
+    background: conic-gradient(red, orange, yellow, green, blue);
+    border: solid gold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.caja5{
+    background: linear-gradient(90deg, #e66465, #9198e5);
+    color: gold;
+  }
+.caja5 h2 {
+    text-shadow: 5px 5px #558ABB;
+}
+
+.caja6{
+    color: gold;
+    text-shadow: 5px 5px #001000;
+    text-align: center;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+.outline{
+    outline: red dotted thick;
+}
+
+.cajaw{
+    color: limegreen;
+    text-shadow: 5px 5px crimson;
+    -webkit-text-stroke: 1px lightblue;
+    font-size: 50px;
+    text-align: center;
+}
+a:hover{
+    color: pink;
+    transition: 0.5s ease-in;
+}
+
+
+p[contenteditable]:focus{
+    background-color: red;
+    color: white;
+}
+
+.contenedor2{
+    border: double red 10px;
+    outline: white dotted medium;
+    margin:5px;
+    padding:20px;
+    text-align: justify;
+    background-color: wheat;
+    margin: 50px;
+}
+
+
+.contenedor3{
+    border: dotted violet 10px;
+    outline: white double medium;
+    margin: 5px;
+    padding:10%;
+    text-align: justify;
+    background-color: #123456;
+    margin: 40px;
+}
+
+.contenedor4{
+    border: salmon violet 15px;
+    outline: gold double medium;
+    margin: 10px;
+    padding:2%;
+    text-align: justify;
+    background-color: #666666;
+    margin: 40px;
+}
+.cajaenlace1:link{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+
+
+.cajaenlace1{
+    background-color: red;
+    color: white;
+    padding: 1em 1,5em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+/*======Boton 2=====*/
+.cajaenlace2{
+    background-color: red;
+    box-shadow: 1px 5px darkred;
+    color:wheat;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.cajaenlace2:hover{
+    background-color: darkred;
+    cursor:crosshair;
+}
+
+.cajaenlace2:active{
+    box-shadow: none;
+    top:5px
+
+}
+
+.lista1{
+    list-style-type: square;
+    list-style-position: inside;
+
+}
+
+ul.a{
+    color:red;
+}
+
+ul.b{
+    list-style-position: inside;
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+    
+}
+
+ol.a{
+    background-color: darkslateblue;
+    color:white;
+    
+    box-shadow: tomato;
+    cursor: crosshair;
+}
+
+table.a{
+    width: 20px;
+    text-align: center;
+    border-spacing: 2000px;
+    border-color: tomato;
+    border-collapse: collapse;  /*===Suma los bordes de varios hiecos===*/
+    caption-side: top;
+    empty-cells: hide; /*==Muestra u oculta celdas vacías===*/
+    table-layout: fixed;  /*===auto o fixed, el objetivo de esto es configurar el texto sobresaliente===*/
+}
+
+table.b{
+    border: solid tomato 2px;
+}
