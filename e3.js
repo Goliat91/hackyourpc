@@ -66,7 +66,7 @@ function ejercicio4() {
 
     let sumaOp = (nOp1 + nOp2).toFixed(2);
     let restaOp = (nOp1 - nOp2).toFixed(2);
-    let multiplicacionOp = (nOp1 + nOp2).toFixed(2);
+    let multiplicacionOp = (nOp1 * nOp2).toFixed(2);
     let divisionOp = (nOp1 / nOp2).toFixed(2);
 
     document.getElementById('salida-operaciones').innerHTML = `El resultado de la suma es <b>${sumaOp}</b> <br> El resultado de la resta es <b>${restaOp}</b> <br>
