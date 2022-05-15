@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacion 3</title>
+    <link rel="stylesheet" href="js3.css">
+    <script src="js3.js"></script>
+</head>
+
+<body>
+    <div class="caja">
+
+        <div class="caja2">
+            <a href="../JS1/js1.html"><button class="entrada-boton">Relacion 1</button></a>
+            <a href="../JS2x/js2x.html"><button class="entrada-boton">Relacion 2X</button></a>
+            <a href="../JS3/js3.html"><button class="entrada-boton">Relacion 3</button></a>
+            <a href="../Recursos/arrays.html"><button class="entrada-boton">Arrays</button></a>
+            <a href="../JS1/fol.html"><button class="entrada-boton">fol</button></a>
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 0</h2>
+            <p>Crea un fichero llamado funciones.js en el que guardarás
+                todas las funciones de este tema.</p>
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 1</h2>
+            <p>Escribe una función llamada <b>potencia</b> que reciba dos
+                argumentos y devuelvela como resultado de la potencia del
+                primer número elevado al segundo.</p>
+            <input type="number" class="entrada" id="ej1a" value="0">
+            <input type="number" class="entrada" id="ej1b" value="0">
+
+            <button onclick="ej1()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida1"></div>
+
+        </div>
+
+
+        <div class="caja2">
+            <h2>Ejercicio 2</h2>
+            <p>Escribe una función llamada <b>par</b> que devuelva <b>true</b>
+                si el número recibido es par y <b>false</b> si es impar.</p>
+            <input type="number" class="entrada" id="ej2a" value="0">
+            <button onclick="ej2()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida2"></div>
+
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 3</h2>
+            <p>Escribe una función llamada <b>sueldo</b> que reciba tres argumentos
+                y calcule el sueldo del mes de un empleado a partir del número de horas
+                trabajadas, el precio por hora y el IRPF</p>
+                <input type="number" class="entrada" id="ej3a" value="0">
+                <label for="">Precio por hora</label>
+            <input type="number" class="entrada" id="ej3b" value="0">
+            <label for="">Nº Horas al dia</label>
+            <input type="number" class="entrada" id="ej3c" value="0">
+            <label for="">IRPF</label>
+            <br>
+            <button onclick="ej3()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida3"></div>
+
+
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 4</h2>
+            <p>Función llamada <b>factura</b> que recibe el precio unitario
+                de unidades compradas, el descuento aplicado, el IVA y el total.</p>
+            <input type="number" class="entrada" id="ej4a" value="">
+            <label for="">Precio Und</label>
+            <input type="number" class="entrada" id="ej4b" value="">
+            <label for="">Cantidad</label>
+            <input type="number" class="entrada" id="ej4c" value="">
+            <label for="">Descuento %</label>
+            <input type="number" class="entrada" id="ej4d" value="">
+            <label for="">IVA %</label>
+            <br>
+            <button onclick="ej4()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida4"></div>
+
+        </div>
+
+
+
+        <div class="caja2">
+            <h2>Ejercicio 5</h2>
+            <p>Escribe una función llamada <b>convertir</b> que pase de grados Celsius a Fahrenheit.
+                (F = (9/5)*C+32)</p>
+            <input type="number" class="entrada" id="ej5a" value="0">
+            <button onclick="ej5()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida5"></div>
+
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 6</h2>
+            <p>Escribe una función llamada <b>mayor</b> que reciba como parámetros
+                dos números enteros y devuelva el mayor.</p>
+            <input type="number" class="entrada" id="ej6a" value="0">
+            <input type="number" class="entrada" id="ej6b" value="0">
+            <button onclick="ej6()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida6"></div>
+
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 7</h2>
+            <p>Escribe una función llamada <b>primo</b> que reciba un número enteros
+                y devuelva si es primo o no.</p>
+            <input type="number" class="entrada" id="ej7a" value="0">
+            <button onclick="ej7()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida7"></div>
+
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 8</h2>
+            <p>Función que calcule el <b>área</b> de un círculo, siendo esta A = PI * r2</p>
+            <input type="number" class="entrada" id="ej8a" value="0">
+            <button onclick="ej8()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida8"></div>
+
+        </div>
+
+
+        <div class="caja2">
+            <h2>Ejercicio 9</h2>
+            <p>Escribe una función que reciba como argumento un número y muestre
+                por pantalla todos sus <b>divisores</b>. </p>
+            <input type="number" class="entrada" id="ej9a" value="0">
+            <button onclick="ej9()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida9"></div>
+
+        </div>
+
+
+        <div class="caja2">
+            <h2>Ejercicio 10</h2>
+            <p>Diseña una función llamada <b>factorial</b> que devuelvael factorial
+                de un número recibido como parámetro</p>
+            <input type="number" class="entrada" id="ej10a" value="0">
+            <button onclick="ej10()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida10"></div>
+
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 11</h2>
+            <h3>Revisar</h3>
+            <p>Realiza una función llamada <b>contar</b> que reciba un número y devuelva la
+                suma de sus dígitos. Ejemplos 25 (devuelve 7). 126 (devuelve 9).</p>
+            <input type="number" class="entrada" id="ej11a" value="0">
+            <button onclick="ej11()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida11"></div>
+
+        </div>
+
+
+        <div class="caja2">
+            <h2>Ejercicio 12</h2>
+            <h3>Revisar</h3>
+            <p>Escribe una función llamada <b>binario</b> que reciba un número decimal y
+                devuelva una cadena de caracteres con el valor binario del número recibido.</p>
+            <input type="number" class="entrada" id="ej12a" value="0">
+            <button onclick="ej12()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida12"></div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
