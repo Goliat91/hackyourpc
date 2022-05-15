@@ -1,0 +1,89 @@
+body{
+    background: url(aa11.webp);
+    background-attachment: fixed;
+    font-family: Verdana, sans-serif;
+    color: gold;
+}
+
+
+
+.caja{
+    background: #20012013;
+    height: auto;
+}
+
+
+.caja2{
+    background: rgba(9, 73, 73, 0.911);
+    border: 7px solid rgba(31, 216, 93, 0.288);
+    border-radius: 50px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+label{
+    font-size: 20px;
+    font-style: italic;
+    color: purple;
+}
+
+.entrada{
+
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid gold;
+    margin: 5px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.banner{
+    position: sticky;
+    top: 10px;
+    background-color: rgba(5, 49, 20, 0.925);
+    border: 1px solid rgba(255, 217, 0, 0.137);
+    margin: 5px;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+.salida{
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid gold;
+    margin: 5px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.entrada-boton{
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid gold;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.entrada:hover, .entrada-boton:hover{
+    background-color: rgba(182, 216, 31, 0.288);
+    transition: .5s;
+}
+
+hr{
+    background-color: rgba(31, 216, 93, 0.288);
+    height: 2px;
+}
+
+.cyan{
+    color: cyan;
+}
+.center{
+    text-align: center;
+    justify-content: center;
+}
