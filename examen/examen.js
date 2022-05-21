@@ -1,59 +1,97 @@
-let array1 = [];
+
 function ej1() {
-    //Entrada
-    var n = String(ej1a.value);
-
-    // Descompición
-    let numero0 = parseInt(n[0]);
-    let numero1 = parseInt(n[1]);
-    let numero2 = parseInt(n[2]);
-
-    //Cuadrado
-    let cuad0 = Math.pow(numero0, 2);
-    let cuad1 = Math.pow(numero1, 2);
-    let total = cuad0 + cuad1;
-
-    // Flujo decisiones
-    if (n > 100) {
-        salida1.innerHTML = `
-    Introduzca un número de 2 dígitos
-    `;
-    } else if (total > n) {
-        salida1.innerHTML = `
-    Numero:${n} <br>
-    <h2>¡ El número es curioso !</h2> <br>
-    Descomposición: <br>
-    ${numero0}  ${numero1} <br>
-    <br>
-    Suma de sus cuadrados = ${cuad0} + ${cuad1} = ${total}<br>
-    `;
-    } else if (total < n) {
-
-        salida1.innerHTML = `
-    Numero: ${n} <br>
-    <h3>El número no es curioso</h3> <br>
-    Descomposición: <br>
-    ${numero0}  ${numero1} <br>
-    <br>
-    Suma de sus cuadrados = ${cuad0} + ${cuad1} = ${total}<br>
-    `;
-
+    let entrada1 = ej1a.value;
+    salida1.innerHTML = sum_cuad_dig(entrada1);
+    if (entrada1 < 0) {
+        salida1.innerHTML = `Introduzca un número positivo`
+    }else if (sum_cuad_dig(entrada1) > entrada1){
+        salida1.innerHTML += ` ¡Es un número desbordado!`
     } else {
-        salida1.innerHTML = `
-    Introduzca un número de 2 dígitos`;
+        salida1.innerHTML += ` No es un número desbordado.`
     }
+}
 
-
+function sum_cuad_dig(n) {
+    let cadena = String(n);
+    // let array1 = [];
+    let total = 0;
+    for (let i = 0; i < cadena.length; i++) {
+        let entero = parseInt(cadena[i]);
+        let cuadrado = Math.pow(entero, 2);
+        // array1.push(cuadrado);
+        total += cuadrado;
+    }
+    return total;
 }
 
 
-function sum_cuag_dig(n) {
-    salida1.innerHTML = `${n}`;
+function ej2(){
+    const envio = 5;
+    let peras = parseInt(ej2a.value);
+    let manzanas = parseInt(ej2b.value);
+    let fresas = parseInt(ej2c.value);
+    let sandias = parseInt(ej2d.value);
+    let totalKg = + peras + manzanas + fresas + sandias;
+    
+    let precioPeras = peras * 3;
+    let precioManzanas = manzanas * 2.5;
+    let precioFresas = fresas * 4;
+    let precioSandias = sandias * 1;
+    let totalPrecio = envio + precioPeras + precioManzanas + precioFresas + precioSandias;
+
+    let perasDescuento = precioPeras * 0.9;
+    let manzanasDescuento = precioManzanas * 0.9;
+    let fresasDescuento = precioFresas * 0.9;
+    let sandiasDescuento = precioSandias * 0.9;
+    let totalDescuento = envio + perasDescuento + manzanasDescuento + fresasDescuento + sandiasDescuento;
+    
+
+if (totalKg > 10) {
+
+    salida2.innerHTML = `
+    <h3>¡10% de descuento aplicado!</h3>
+    Total de kilos: ${totalKg} <br> <br>
+    Precio de envío: ${envio} <br>
+    Precio Peras ${perasDescuento} €<br>
+    Precio Manzanas ${manzanasDescuento} €<br>
+    Precio Fresas ${fresasDescuento} €<br>
+    Precio Sandias ${sandiasDescuento} €<br>
+    <br>
+    Precio Total ${totalDescuento} €
+    `;
+} else{
+    salida2.innerHTML = `
+    Total de kilos: ${totalKg} <br> <br>
+    Precio de envío: ${envio} <br>
+    Precio Peras ${precioPeras} €<br>
+    Precio Manzanas ${precioManzanas} €<br>
+    Precio Fresas ${precioFresas} €<br>
+    Precio Sandias ${precioSandias} €<br>
+    <br>
+    Precio Total ${totalPrecio} €
+    `;
+    }
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function mostrarArray() {
     array1.push(n);
 
@@ -66,3 +104,10 @@ function mostrarArray() {
       ${array1[3]}<br>`;
     }
 }
+*/
+/*
+Ojo 
+y = String(22);
+y.split('');     // Utiliza como delimitador el contenido de las comillas
+console.log(y);
+*/ 
