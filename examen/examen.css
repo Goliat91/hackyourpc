@@ -1,0 +1,99 @@
+body {
+    background: url(../Recursos/aa11.webp);
+    background-attachment: fixed;
+    font-family: Verdana, sans-serif;
+    color: gold;
+}
+
+.caja {
+    background: #17c0a400;
+    height: auto;
+}
+
+.caja2 {
+    background: rgba(0, 0, 0, 0.795);
+    border-top: 4px solid rgba(243, 132, 29, 0.664);
+    border-right: 7px solid rgba(212, 117, 28, 0.664);
+    border-bottom: 2px solid rgba(182, 137, 137, 0.664);
+    border-left: 2px solid rgba(182, 137, 137, 0.664);
+    border-radius: 50px;
+    box-shadow: 10px -10px 15px rgba(255, 217, 0, 0.404);
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+
+label {
+    font-size: 20px;
+    font-style: italic;
+    color: purple;
+}
+
+.entrada {
+
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid rgba(31, 216, 93, 0.993);
+    margin: 5px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(255, 217, 0, 0.822);
+}
+
+.salida {
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid rgba(31, 216, 93, 0.993);
+    ;
+    margin: 5px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(255, 217, 0, 0.822);
+}
+
+.entrada-boton {
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid rgba(31, 216, 93, 0.993);
+    ;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(255, 217, 0, 0.822);
+}
+
+.entrada:hover,
+.entrada-boton:hover {
+    background-color: rgba(182, 216, 31, 0.288);
+    transition: .5s;
+}
+
+hr {
+    background-color: rgba(31, 216, 93, 0.288);
+    height: 2px;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.center {
+    text-align: center;
+}
+
+dt {
+    font-size: larger;
+}
+
+li,
+dd {
+    margin: 6px;
+}
+
+dl {
+    margin: 25px 0px;
+}
