@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="examen.css">
     <script src="examen.js"></script>
 </head>
+
 <body>
     <div class="caja">
         <div class="caja2">
@@ -17,16 +19,59 @@
             </p>
             <p>Por ejemplo: si n=145 f(n)=1<sup>2</sup>+4<sup>2</sup>+5<sup>2</sup>=1+16+25=42.</p>
             <p>Un número es desbordado si la suma de sus dígitos al cuadrado es mayor que el propio número. <br>
-            Crea otra función llamada desbordado que tendrá como entrada un número entero n y que devolverá como 
-        salida true si el número es desbordado y false en caso contrario.</p>
-            <p>Crea un formulario que admita un número entero y que al pulsar el botón muestre en pantalla la suma 
+                Crea otra función llamada desbordado que tendrá como entrada un número entero n y que devolverá como
+                salida true si el número es desbordado y false en caso contrario.</p>
+            <p>Crea un formulario que admita un número entero y que al pulsar el botón muestre en pantalla la suma
                 de los dígitos al cuadrado e indique si el número es desbordado o no lo es</p>
-                <input type="number" class="entrada-boton" id="ej1a" maxlength="2">
-                <button class="entrada-boton" onclick="ej1()">Calcular</button>
-                <div class="salida" id="salida1"></div>
+            <input type="number" class="entrada-boton" id="ej1a" maxlength="2">
+            <button class="entrada-boton" onclick="ej1()">Calcular</button>
+            <div class="salida" id="salida1"></div>
         </div>
-        
+
+
+        <div class="caja2">
+            <h2>Ejercicio2 Frutería</h2>
+            <p>Una frutería pretende vender frutas por internet, venderá Peras a 3€/kilo,
+                Manzanas a 2,5€/kilo, Fresas a 4€/kilo y Sandías a 1€/kilo. A partir de 5kilos todos
+                los productos se abaratan un 10%. Los gastos de envío son fijos y ascienden a 5€.
+                Crea un formulario que permita determinar las solicitude</p>
+            <p>Crea un formulario que permita determinar las solicitudes del cliente indicando
+                la cantidad total a pagar y el desglose de cada producto.
+                Los precios finales deberás mostrarlos escribiendo en el DOM y mostrándolos
+                justo a continuación del botón Calcular del formulario de la frutería.</p>
+
+                <input type="number" class="entrada-boton" id="ej2a" value="0">
+                <label for="">Peras 3€/Kilo</label>
+                <input type="number" class="entrada-boton" id="ej2b"value="0">
+                <label for="">Manzanas 2,5/Kilo</label>
+                <input type="number" class="entrada-boton" id="ej2c"value="0">
+                <label for="">Fresas 4/Kilo</label>
+                <input type="number" class="entrada-boton" id="ej2d"value="0">
+                <label for="">Sandias 1€/Kilo</label>
+                <br>
+                <label for="">+5€ Gastos de envio</label>
+                <button class="entrada-boton" onclick="ej2()">Calcular</button>
+                <div class="salida" id="salida2"></div>
+                <input type="reset" class="entrada-boton">
+        </div>
+
+        <div class="caja2">
+			<input list="bands" name="mbands" id="mbands" class="input" placeholder=" ">
+			<div class="cut"></div>
+			<label for="mbands" class="placeholder">--Selecciona--</label>
+			<datalist id="bands">
+				<option value="Guns N'Roses">
+				<option value="Queen">
+				<option value="AC/DC">
+                    <option value="xxx"></option>
+			</datalist>
+        </div>
+
+
+
+
     </div>
-    
+
 </body>
+
 </html>
