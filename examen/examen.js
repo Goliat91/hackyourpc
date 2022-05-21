@@ -16,7 +16,7 @@ function ej1() {
     // Flujo decisiones
     if (n > 100) {
         salida1.innerHTML = `
-    Introduzca un número de 3 dígitos
+    Introduzca un número de 2 dígitos
     `;
     } else if (total > n) {
         salida1.innerHTML = `
